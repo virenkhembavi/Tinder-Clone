@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;700&family=Roboto:wght@300&display=swap');
+html, body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Readex Pro', sans-serif;}
+
+h3{
+    font-style: italic;
+}
+
+.primary-title{
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+}
+
+.primary-button{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: linear-gradient(45deg, rgba(254,48,144), rgba(255,89,64));
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+}
+
+.primary-button:hover{
+    background: linear-gradient(260deg, rgba(254,48,144), rgba(255,89,64));
+}
+
+nav .nav-button{
+    color:rgba(254,48,144);
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px;  
+}
+
+nav .nav-button:disabled{
+    background-color: rgb(189,180,180);
+    color: rgb(160,38,75);
+}
+
+
+nav{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+nav .logo-container{
+    width: 170px;
+    margin: 15px;
+}
+
+nav .logo-container .logo{
+    width: 100%;
+    /* margin: 15px; */
+}
+
+.overlay{
+    width:100%;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(to bottom,
+    rgba(0,0,0,0.65)0%,
+    rgba(0,0,0,0)100%
+    ),url("https://www.cnet.com/a/img/YXakedH1nyUdB0kKpB5E0zQn7LE=/940x0/2020/02/05/f8e32897-4019-4165-a4fa-0497449d534a/screen-shot-2020-02-05-at-11-24-14-am.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+/* auth modal */
+
+.auth-modal{
+    position: absolute;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 340px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 40px;
+    
+}
+
+.auth-modal .close-icon{
+    float: right;
+
+}
+
+.secondary-button{
+    color: rgb(121,119,119);
+    background-color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 2px solid rgb(121,119,119);
+    margin: 6px;
+}
+
+.secondary-button:hover{
+    color: rgb(48, 48, 48);
+    border: solid 2px rgb(48, 48, 48);
+}
+
+.auth-modal form{
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-modal input[type=password],
+.auth-modal input[type=email]{
+    padding: 8px;
+    margin: 8px;
+    font-size: 18px;
+}
+
+/* onboard */
+.onboarding{
+    border-top: solid 1px rgb(213,213,213);
+}
+
+
+.onboarding form{
+    display: flex;
+    justify-content: center;
+}
+
+.onboarding form section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 35%;
+    text-align: start;
+}
+
+.onboarding form input {
+    padding: 15px 30px;
+    margin: 10px 0px;
+    font-size: 15px;
+    border: solid 2px rgb(219, 219, 219);
+    border-radius: 10px;
+}
+
+.onboarding form input::-webkit-inner-spin-button,
+.onboarding form input::-webkit-outer-spin-button{
+    -webkit-appearance:none;
+    margin: 0;
+}
+
+.onboarding form label{
+    margin: 10px 0px;
+}
+
+.onboarding form .multiple-input-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.onboarding form .multiple-input-container input{
+    margin-right: 10px;
+}
+
+
+.onboarding form .multiple-input-container label{
+    padding: 10px;
+    border: solid 2px rgb(144, 144, 144);
+    border-radius: 10px;
+    transition: all 0.3s;
+    margin-right: 10px;
+}
+
+.onboarding form input[type="radio"]{
+    display: none;
+}
+
+
+.onboarding form input[type="number"]{  
+    width: 20%;
+}
+
+
+.onboarding form input[type="radio"]:checked + label{
+    border: solid 2px rgb(221, 39, 22);
+}
+
+.onboarding form input[type="submit"]:hover{
+    background-color: rgb(235, 235, 235)
+}
+
+.onboarding form input[type="submit"]:active{
+    background-color: rgb(226, 115, 155)
+}
+
+.onboarding form .photo-container img{
+    width: 90%;
+}
+
+/* dashboard */
+
+.dashboard{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard .swiper-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.swipe {
+    position: absolute;
+  }
+  
+.dashboard .card-Container {
+    width: 400px;
+    /* max-width: 260px; */
+    height: 600px;
+  }
+  
+  .card {
+    /* position: relative; */
+    /* background-color: #fff; */
+    width: 400px;
+    height: 600px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* .cardContent {
+    width: 100%;
+    height: 100%;
+  } */
+    
+  .card h3 {
+    /* position: absolute;
+    bottom: 0;
+    margin: 10px;
+    color: #fff; */
+    margin-top: 0px;
+  }
+  
+  .dashboard .swipe-info{
+      position: absolute;
+      bottom: 0;
+      padding: 10px;
+      color: white;
+      font-weight: 400;
+    }
+
+    /* Chat Container */
+
+    .chat-container{
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 30%;
+        text-align: left;
+        z-index: 1;
+    }
+
+    .chat-container .chat-container-header{
+        background: linear-gradient(45deg, rgba(254,48,144), rgba(255,89,64));
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chat-container .chat-container-header .profile{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        color: rgb(235, 235, 235);
+    }
+
+    .chat-container .option{
+        border: none;
+        background-color: rgb(255, 255, 255);
+        border-bottom: solid 4px rgb(243, 33, 33);
+        font-size: 20px;
+        margin: 2px;
+        padding: 10px;
+    }
+
+    .chat-container .option:disabled{
+        border-bottom: solid 4px rgb(187,187,187);
+    }
+
+    .img-container{
+        height: 30px;
+        width: 30px;
+        /* overflow: hidden; */
+        margin: 10px;
+        display: flex;
+    }
+
+    .img-container img{
+        width: 100%;
+    }
+
+    /* chat display */
+
+    .chat-display{
+        padding: 20px;
+        height: 60vh;
+        overflow-y: auto;
+    }
+
+    .chat-input{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
